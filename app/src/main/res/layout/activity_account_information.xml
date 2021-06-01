@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AccountInformation">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_200"
+        >
+
+        <LinearLayout
+            android:id="@+id/toolbar_title_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+                android:textStyle="bold"
+                android:text="Account Information"
+                android:textSize="19sp"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/my_account_shimmerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:duration="800">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/view1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:background="@color/placeholder_bg"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".8"
+                    android:textSize="18dp"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+                <TextView
+                    android:textSize="18dp"
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1.2"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+            </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/placeholder_bg"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".8"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                    <TextView
+                        android:textSize="18dp"
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1.2"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/placeholder_bg"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".8"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                    <TextView
+                        android:textSize="18dp"
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1.2"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/placeholder_bg"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".8"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                    <TextView
+                        android:textSize="18dp"
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1.2"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="15dp"
+        android:id="@+id/mainLayout"
+        android:visibility="gone"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:layout_height="wrap_content"
+                    android:text="Name"/>
+
+                <TextView
+                    android:textSize="18dp"
+                    android:id="@+id/accountName"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:layout_height="wrap_content"
+                    android:text="Balance"/>
+
+                <TextView
+                    android:textSize="18dp"
+                    android:id="@+id/accountBalance"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:layout_height="wrap_content"
+                    android:text="Minimum Balance"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="18dp"
+                    android:id="@+id/accountminiBalance"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:layout_height="wrap_content"
+                    android:text="Currency"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="18dp"
+                    android:id="@+id/accountcurrency"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>.
+</LinearLayout>
