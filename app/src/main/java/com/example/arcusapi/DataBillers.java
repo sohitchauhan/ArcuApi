@@ -50,7 +50,6 @@ import retrofit2.Response;
 public class DataBillers extends AppCompatActivity {
     String CURRENT_DATE="";
     String datee = "";
- String dateeff = "";
     ShimmerFrameLayout my_account_shimmerLayout;
     RecyclerView mainLayout;
     String checksum="";
